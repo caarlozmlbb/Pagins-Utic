@@ -141,9 +141,58 @@
 /*  1.1 Theme Default
 /*----------------------------------------*/
 @font-face {
-    font-family: 'PattanakarnBlackItalic';
-    src: url('assets/fonts/fonnts.com-Pattanakarn_Black_Italic.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Pattanakarn';
+    src: url('/fonts/fonnts.com-Pattanakarn_Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pattanakarn';
+    src: url('/fonts/fonnts.com-Pattanakarn_Black_Italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Pattanakarn';
+    src: url('/fonts/fonnts.com-Pattanakarn_Bold_Italic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Pattanakarn';
+    src: url('/fonts/fonnts.com-Pattanakarn_ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pattanakarn';
+    src: url('/fonts/fonnts.com-Pattanakarn_Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pattanakarn';
+    src: url('/fonts/fonnts.com-Pattanakarn_Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pattanakarn';
+    src: url('/fonts/fonnts.com-Pattanakarn_Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pattanakarn';
+    src: url('/fonts/fonnts.com-Pattanakarn_Thin.ttf') format('truetype');
+    font-weight: 100;
     font-style: normal;
 }
 
@@ -208,9 +257,9 @@ svg path {
   /**
   @font family declaration
   */
-  --rr-ff-body: 'Roboto', sans-serif;
-  --rr-ff-heading: 'Roboto', sans-serif;
-  --rr-ff-roboto: 'Roboto', sans-serif;
+  --rr-ff-body: 'Pattanakarn', sans-serif;
+  --rr-ff-heading: 'Pattanakarn', sans-serif;
+  --rr-ff-roboto: 'Pattanakarn', sans-serif;
   --rr-ff-fontawesome: "Font Awesome 6 Pro";
   /**
   @color declaration
@@ -401,7 +450,7 @@ ul {
 
 p {
   font-size: var(--rr-fs-p);
-  font-weight: var(--rr-fw-normal);
+  font-weight: var(--rr-fw-regular);
   color: var(--rr-text-body);
   margin-bottom: 30px;
   line-height: var(--rr-lh-p);
@@ -5142,7 +5191,7 @@ body .ui-tooltip {
 .banner-2__content h1 {
   font-style: normal;
   font-weight: 450; /*NEGRITA DE LETRAS*/
-  font-size: 50.8185px; /*TAMAÑO DE LETRAS*/
+  font-size: 48.8185px; /*TAMAÑO DE LETRAS*/
   line-height: 50px; /*ESPACIO DE LETRAS*/
   text-transform: capitalize;
 }
