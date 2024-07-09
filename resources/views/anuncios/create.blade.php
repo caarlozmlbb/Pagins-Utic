@@ -117,7 +117,7 @@
             <input type="file" id="imagen" name="foto" class="form-control" onchange="previewImage(event)">
         </div>
 
-        <form id="anuncioForm" action="{{ route('anuncios.store') }}" method="POST" enctype="multipart/form-data">
+        <form id="eventoForm" action="{{ route('anuncios.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
                 <label for="descripcion" class="form-label">Descripción</label>
@@ -147,6 +147,10 @@
                 document.querySelector('.preview-box span').style.display = 'none';
             }
             reader.readAsDataURL(event.target.files[0]);
+            // Mover el input file al formulario eventoForm
+            var input = document.getElementById('imagen');
+            var form = document.getElementById('eventoForm');
+            form.appendChild(input);
         }
     </script>
 @endsection
