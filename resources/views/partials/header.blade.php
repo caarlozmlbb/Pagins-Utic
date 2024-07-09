@@ -107,9 +107,9 @@
                                         <li><a href="/galeria">GALERIAS</a></li>
                                         @if (Route::has('login'))
                                                 @auth
-                                                    <li><a href="{{ url('/dashboard') }}" class="login-button">DASHBOARD</a></li>
+                                                    <li><a href="{{ url('/dashboard') }}" class="login-button">MENU</a></li>
                                                 @else
-                                                    <li><a href="{{ route('login') }}" class="login-button">LOGIN</a></li>
+                                                    <li><a href="{{ route('login') }}" class="login-button">INGRESAR</a></li>
                                                     {{-- @if (Route::has('register'))
                                                         <li><a href="{{ route('register') }}">REGISTER</a></li>
                                                     @endif --}}
