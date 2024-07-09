@@ -22,24 +22,30 @@
     <link rel="stylesheet" href="{{ asset('assets/css/plugins/odometer-theme-default.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/scss/layout/pages/_about-us.scss') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
 
-<body class="body-2">
 
+    {{-- @foreach ($videos as $video)
+    <p>{{dd($video)}}</p>
+    @endforeach --}}
     @include('partials.carga')
     @include('partials.header')
     <main class="home-2__background">
         @include('partials.banner')
         @include('partials.historia')
         @include('partials.profesionales')
+        @include('partials.anuncios')
         @include('partials.upea')
         @include('partials.sitios')
-        {{-- @include('partials.publicidad') --}}
         @include('partials.documentos')
         @include('partials.carreras')
+        @include('partials.video')
         @include('partials.contacto')
         @include('partials.footer')
     </main>
+
 
     <style>
         .circles {
@@ -185,7 +191,7 @@
     <script src="{{ asset('assets/js/plugins/smoothscroll.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/ajax-form.js') }}"></script>
     <script src="{{ asset('assets/js/main.js') }}"></script>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>

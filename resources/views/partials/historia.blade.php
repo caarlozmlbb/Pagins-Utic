@@ -31,10 +31,12 @@
                         <div class="about-us-2__main-content">
                             <div class="section__title-wrapper about-us-2__content mb-60 mb-xs-50">
                                 <h5 class="section__subtitle color-theme-primary mb-15 mb-xs-10 title-animation"><img
-                                        src="assets/imgs/ask-quesiton/heart.png" alt="icon not found"
-                                        class="img-fluid"> Quienes somos?</h5>
-                                <h2 class="section__title mb-20 title-animation">HISTORIA DE UTIC</h2>
-                                <p class="mb-0" >En mayo de 2009, la Asamblea de la carrera de Ingeniería de Sistemas
+                                        src="assets/imgs/ask-quesiton/heart.png" alt="icon not found" class="img-fluid">
+                                    Quienes somos?</h5>
+                                <h2 class="section__title mb-20 title-animation">
+                                    <i class="fas fa-history"  style="background: linear-gradient(to right, red, blue); -webkit-background-clip: text; color: transparent;""></i> HISTORIA DE UTIC
+                                </h2>
+                                <p class="mb-0">En mayo de 2009, la Asamblea de la carrera de Ingeniería de Sistemas
                                     de la UPEA
                                     acordó crear la Unidad de Sistemas de Información (SIE) para desarrollar áreas de
                                     sistemas,

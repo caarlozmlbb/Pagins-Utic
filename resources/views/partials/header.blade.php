@@ -99,12 +99,22 @@
                                         <li><a href="appoinment.html">LOGIN</a></li>
                                              </ul>
                                         </li> --}}
-                                        <li><a href="#paginas">PAGINAS</a></li>
                                         <li><a href="#personal">PERSONAL</a></li>
+                                        <li><a href="#anuncios">CURSOS</a></li>
+                                        <li><a href="#paginas">PAGINAS</a></li>
                                         <li><a href="#documentos">DOCUMENTOS</a></li>
                                         <li><a href="#carreras">CARRERAS</a></li>
-                                        <li><a href="contact.html">GALERIAS</a></li>
-                                        <li><a href="{{ route('login') }}" class="login-button">LOGIN</a></li>
+                                        <li><a href="/galeria">GALERIAS</a></li>
+                                        @if (Route::has('login'))
+                                                @auth
+                                                    <li><a href="{{ url('/dashboard') }}" class="login-button">DASHBOARD</a></li>
+                                                @else
+                                                    <li><a href="{{ route('login') }}" class="login-button">LOGIN</a></li>
+                                                    {{-- @if (Route::has('register'))
+                                                        <li><a href="{{ route('register') }}">REGISTER</a></li>
+                                                    @endif --}}
+                                                @endauth
+                                        @endif
                                         <script>
                                             document.addEventListener('DOMContentLoaded', function() {
                                                 const menuItems = document.querySelectorAll('.main-menu ul li a');

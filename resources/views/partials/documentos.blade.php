@@ -7,7 +7,9 @@
                         <img src="assets/imgs/ask-quesiton/heart.png" alt="icon not found" class="img-fluid">
                         Documentos
                     </h5>
-                    <h2 class="section__title mb-0 title-animation">DOCUMENTOS U-TIC UPEA</h2>
+                    <h2 class="section__title mb-0 title-animation">
+                        <i class="fas fa-file-alt" style="color: #333;"></i> DOCUMENTOS U-TIC UPEA
+                    </h2>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -141,68 +143,3 @@
     }
 </style>
 
-<!-- blog 2 area end -->
-
-
-
-
-
-
-
-
-    {{-- <embed src="{{ asset('assets/doc/estandares_abiertos.pdf') }}" type="application/pdf" width="400px" height="600px" /> --}}
-    {{-- <a href="{{ asset('assets/doc/estandares_abiertos.pdf') }}" target="_blank">
-        <canvas id="pdf-render1" class="pdf-container"></canvas>
-    </a>
-    <a href="{{ asset('assets/doc/manual_procedimiento_ciclodevida.pdf') }}" target="_blank">
-        <canvas id="pdf-render2" class="pdf-container"></canvas>
-    </a>
-    <a href="{{ asset('assets/doc/PISI-UPEA.pdf') }}" target="_blank">
-        <canvas id="pdf-render3" class="pdf-container"></canvas>
-    </a>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.5.207/pdf.min.js"></script>
-    <script>
-        const pdfUrls = [
-            "{{ asset('assets/doc/estandares_abiertos.pdf') }}",
-            "{{ asset('assets/doc/manual_procedimiento_ciclodevida.pdf') }}",
-            "{{ asset('assets/doc/PISI-UPEA.pdf') }}"
-        ];
-
-        pdfUrls.forEach((url, index) => {
-            const canvas = document.getElementById(`pdf-render${index + 1}`);
-            const ctx = canvas.getContext('2d');
-            let scale = 1;
-
-            // Render the page
-            const renderPage = (pdfDoc, pageNum) => {
-                pdfDoc.getPage(pageNum).then(page => {
-                    const viewport = page.getViewport({ scale });
-                    canvas.height = viewport.height;
-                    canvas.width = viewport.width;
-
-                    const renderCtx = {
-                        canvasContext: ctx,
-                        viewport
-                    };
-
-                    page.render(renderCtx);
-                });
-            };
-
-            // Get Document
-            pdfjsLib.getDocument(url).promise.then(pdfDoc => {
-                renderPage(pdfDoc, 1); // Render first page
-            });
-        });
-    </script>
-    <style>
-        .pdf-container {
-            border: 1px solid #ccc;
-            width: 400px;
-            height: 600px;
-            margin-bottom: 20px;
-            cursor: pointer; /* Cursor pointer to indicate clickability */
-        }
-    </style> --}}
-    <!-- Body main wrapper end -->

@@ -10108,7 +10108,7 @@ body .ui-tooltip {
 .doctor__background {
 
   position: relative;
-  padding: 70px;
+  padding: 20px;
 }
 .doctor__background:after {
   position: absolute;
@@ -10176,6 +10176,8 @@ body .ui-tooltip {
 .doctor__item-media img {
   width: 5050px;
   height: 500px;
+    /* width: 100%;
+  height: 100%; */
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -10334,7 +10336,6 @@ body .ui-tooltip {
   height: 100%;
   background: var(--rr-theme-primary);
 }
-
 
 .latest-work__content {
   max-width: 699px;

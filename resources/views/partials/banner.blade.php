@@ -22,10 +22,12 @@
                     </div>
                 </div>
                 <div class="col-lg-5">
+                    @foreach ($contactos as $contacto)
                     <div class="banner-2__media">
                         <div class="banner-2__media-shape upDown"></div>
-                        <img class="img-fluid" src="assets/imgs/banner-2/profesionales.jpg" alt="icon not found">
+                        <img class="img-fluid" src="assets/imgs/contactos/{{ $contacto->foto }}" alt="icon not found">
                     </div>
+                    @endforeach
                 </div>
             </div>
         </div>
